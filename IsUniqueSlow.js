@@ -1,10 +1,8 @@
 function isUnique(string) {
-    let arr = string.split('');
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[i] === arr[j]) {
-                return false;
-            }
+    let arr = string.split('').sort();
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] === arr[i + 1]) {
+            return false;
         }
     }
     return true;
