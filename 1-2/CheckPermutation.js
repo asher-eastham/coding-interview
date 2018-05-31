@@ -1,3 +1,9 @@
+/**
+ * @param string1 First string to compare
+ * @param string2 Second string to compare
+ * @return true if string1 and string2 are permutations of each other,
+ *         false otherwise.
+ */
 function isPermutation(string1, string2) {
     if (string1 === string2) {
         return true;

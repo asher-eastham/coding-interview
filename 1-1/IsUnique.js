@@ -1,3 +1,8 @@
+/**
+ * @param string Input string to check whether all characters are unique
+ * @return true if the string contains all unique characters, false otherwise.
+ * Note: this is the O(n) time, O(n) space implementation, using a map.
+ */
 function isUnique(string) {
     let map = {};
     return string.split('').every((val) => {
